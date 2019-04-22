@@ -1,0 +1,13 @@
+Mirai source code: https://github.com/rosgos/Mirai-Source-Code
+// The source code is reall interesting but I don't feel like I have a proper understanding of the code nor the code base to want to run or deploy it. I think it does serve as a great example as well as good research on what my aim should be.
+
+Helpful guide/descriptor of Mirai: https://medium.com/@cjbarker/mirai-ddos-source-code-review-57269c4a68f
+// This gave some useful guide as well as gave more information on how to use Mirai
+
+Descriptor of a C@C: https://www.linkedin.com/pulse/what-command-and-control-cc-servers-botnets-mohamed-abdelaziz
+// This was pretty big for me even know the article was simple it made me realise that I should focus on making my C@C and from there atempt to create the botnet from there. This is due to the need for this to give directions to the botnet.
+
+NOTE: I have recieved a Lynksys router that is linux capable. Depending on what I decide I need I may try and use this to simulate my botnet instead of an IOT device to make thinks simpler
+
+Awesome guide on how to create a basic botnet: https://github.com/TreeHacks/botnet-hackpack
+// I am currently reading and working through this. Once I have a useable product and code I will be uploading this.
