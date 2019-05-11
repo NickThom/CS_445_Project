@@ -1,0 +1,5 @@
+touch my_ip
+ip -4 addr show eth0 | grep -oP '(?<=net\s)\d+(\.\d+){3}' > my_ip
+chmod 777 my_ip
+sshpass -p "root" scp my_ip 10.0.2.11:
+rm my_ip

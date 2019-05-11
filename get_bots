@@ -1,0 +1,12 @@
+touch host
+ip -4 addr show eth0 | grep -oP '(?<=net\s)\d+(\.\d+){3}' >> host
+touch ip_address
+nmap -n --exclude 10.0.2.11 10.0.2.10-15 | awk '/is up/ {print up}; {gsub (/\(|\)/,""); up =$NF}'>> ip_address
+for address in $(cat ip_address)
+do
+  sshpass -p "root" ssh "$address" < respond_with_ip
+  cat my_ip >> bots
+  rm my_ip 
+done
+rm host ip_address
+wait
